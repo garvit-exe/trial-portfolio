@@ -1,3 +1,59 @@
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 0.5em;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0.5em 0;
+    }
+
+    section {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .project {
+        padding: 0.5em;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-icons {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 0.7em;
+    }
+
+    section {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .project {
+        padding: 1em;
+    }
+
+    .contact-info,
+    .contact-icons {
+        width: 50%;
+        text-align: left;
+    }
+}
+
 * {
     line-height: 1.5;
 }
@@ -9,11 +65,43 @@ body {
     text-align: justify;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 header {
-    background-color: #333;
+    background-color: black;
     color: #fff;
     text-align: center;
     padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 0em 0;
+}
+
+nav a {
+    color: black;
+    margin: 0 1em;
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: black;
 }
 
 section {
@@ -36,17 +124,138 @@ li {
     margin-bottom: 0.5em;
 }
 
-.project {
-    border: 1px solid #ddd;
-    padding: 1em;
-    margin-bottom: 1em;
-}
-
 a {
     color: #007BFF;
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+}
+
+#education {
+    margin-top: 2em;
+}
+
+.education-entry {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.education-entry:hover {
+    transform: scale(1.02);
+}
+
+.education-info {
+    font-size: 1em;
+    color: #666;
+}
+
+.education-score {
+    margin-left: 10px;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
+.project-links a {
+    color: #007BFF;
+    text-decoration: none;
+    margin-right: 10px; /* Adjust margin for proper spacing between links */
+    transition: color 0.3s ease-in-out;
+}
+
+.project-links a:hover {
+    color: #0056b3;
+}
+
+.skills-container {
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+.skill-box {
+    border: 1px solid #ddd;
+    padding: 1em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-box:hover {
+    transform: scale(1.1);
+}
+
+.soft-skills-grid,
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+.soft-skills-grid h3,
+.tools-grid h3 {
+    text-align: center;
+}
+
+.soft-skills-grid .skill-box,
+.tools-grid .skill-box {
+    border: 1px solid #ddd;
+    padding: 1em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.soft-skills-grid .skill-box:hover,
+.tools-grid .skill-box:hover {
+    transform: scale(1.1);
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    flex: 1 1 60%;
+    text-align: left;
+}
+
+.contact-info p {
+    margin-bottom: 1em;
+}
+
+.contact-icons {
+    flex: 1 1 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-icons a {
+    color: #007BFF;
+    font-size: 2em;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-icons a:hover {
+    color: #0056b3;
 }

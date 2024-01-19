@@ -3,66 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-c9TRfq63LNtU6E7t8z3QOM3dSbZvzW63FgfVG9CvMQDQPM9P0kkX+2X6U7AXH10D" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>GARVIT - Portfolio</title>
 </head>
 <body>
+    <a href="#main-content" class="sr-only sr-only-focusable" id="main-content">Skip to main content</a>
     <header>
-        <h1>Garvit</h1>
-        <p>Aspiring Innovator | Code Enthusiast | Computer Science Student | Passionate Problem Solver</p>
+        <h1>GARVIT</h1>
+        <p>A Computer Science Student at VIT Bhopal University</p>
+        <nav>
+            <a href="#education" aria-label="Navigate to Education section">Education</a>
+            <a href="#projects" aria-label="Navigate to Projects section">Projects</a>
+            <a href="#skills" aria-label="Navigate to Skills section">Skills</a>
+            <a href="#contact" aria-label="Navigate to Contact Me section">Contact</a>
+        </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            My name is Garvit and I am currently a student at VIT Bhopal University in the School of Computer Science and Engineering. Fuelled by my passion and love for coding and exploring new algorithms, I deeply desire to make new innovations and breakthrough current technology with unconventional methods. I love learning new coding languages and facing challenges that improve my creativity. Finding unique methods that shock people into thinking "IT CAN BE DONE THAT WAY!?!?" is my cup of tea.
-        </p>
+    <section id="education">
+        <h2>Education</h2>
+    
+        <div class="education-entry project">
+            <h3>Bachelor of Technology (B.Tech) in Computer Science and Engineering</h3>
+            <p class="education-info">
+                <b class="education-institute">VIT Bhopal University</b> &bull;
+                <span class="education-date">2022 - present</span> &bull;
+                <span class="education-score"><b>CGPA: 8.05 (3 semesters)</b></span>
+            </p>
+        </div>
+    
+        <div class="education-entry project">
+            <h3>Class 12th</h3>
+            <p class="education-info">
+                <b class="education-institute">IP Convent School</b> &bull;
+                <span class="education-date">2020 - 2022</span> &bull;
+                <span class="education-score"><b>Percentage: 70.4%</b></span>
+            </p>
+        </div>
+    
+        <div class="education-entry project">
+            <h3>Class 10th</h3>
+            <p class="education-info">
+                <b class="education-institute">Delhi Public School</b> &bull;
+                <span class="education-date">2009 - 2020</span> &bull;
+                <span class="education-score"><b>Percentage: 88.8%</b></span>
+            </p>
+        </div>
     </section>
 
-    <section id="objectives">
-        <h2>Career Objectives</h2>
-        <p>
-            Seeking a challenging position as a Software Engineer, Game Developer or Web Developer in order to apply and enhance my skills, foster innovation, and contribute to high-impact projects. Eager to contribute to the success of an organisation while simultaneously expanding personal skill set and professional development.
-        </p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: HTML5, CSS3, JavaScript, Python, C++</li>
-            <li>Web Development: Frontend and Backend</li>
-            <!-- Add more skills as needed -->
-        </ul>
-    </section>
-
+    
     <section id="projects">
         <h2>Projects</h2>
-        <!-- List your projects with descriptions and links -->
+        
         <div class="project">
-            <h3>A.L.I.C.E. - Artificial Linguistic Intelligent Computer Entity</h3>
+            <h3>ALICE - Artificial Linguistic Intelligent Computer Entity</h3>
             <p>
-                ALICE is designed to be a versatile and user-friendly AI voice assistant that can be used for a wide range of tasks, from providing assistance with everyday activities to helping with more complex tasks such as creative writing or code generation.<br>
-                It is a promising project that has the potential to be used in a variety of applications. The project is still under development, but the results to date are encouraging.
+                A versatile and user-friendly AI voice assistant<br>
+                Can be used for a wide range of tasks, from providing assistance with everyday activities to helping with more complex tasks<br>
+                The project is still under development, but the results to date are encouraging.
             </p>
-            <a href="https://github.com/garvit-exe/AliceAI">View Project</a>
+            <div class="project-links">
+                <a href="https://github.com/garvit-exe/AliceAI" target="_blank">View Code</a>
+            </div>
         </div>
+        
         <div class="project">
             <h3>Algorithm Visualiser</h3>
             <p>
-                This project is designed to help a person visualise various sorting algorithms.<br>
-                Currently, it supports the Bubble Sort algorithm.</p>
-            <a href="https://github.com/garvit-exe/Algorithm-Visualiser">View Project</a>
+                Designed to help a person visualize various algorithms.<br>
+                Currently, it supports the Bubble Sort algorithm
+            </p>
+            <div class="project-links">
+                <a href="https://garvit-exe.github.io/Algorithm-Visualiser" target="_blank">View Project</a> &emsp;|&emsp;
+                <a href="https://github.com/garvit-exe/Algorithm-Visualiser" target="_blank">View Code</a>
+            </div>
         </div>
-        <!-- Add more projects as needed -->
+        
+        <div class="project">
+            <h3>Solar System Simulation</h3>
+            <p>
+                Developed a solar system simulation using Python and Pygame to visualize planetary orbits and gravitational forces.<br>
+                Implemented realistic initial velocities and considered gravitational forces between celestial bodies.
+            </p>
+            <div class="project-links">
+                <a href="https://github.com/garvit-exe/solar-system-simulation" target="_blank">View Code</a>
+            </div>
+        </div>
+        
     </section>
-
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <div id="skills-list" class="skills-container"></div>
+    </section>
+    
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Contact me via <a href="mailto:garvitbudhiraja02@gmail.com">Email</a></p>
-        <p>View my profile on <a href="https://github.com/garvit-exe" target="_blank">GitHub</a></p>
-        <p>View my profile on <a href="https://www.linkedin.com/in/garvit-budhiraja/" target="_blank">LinkedIn</a></p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p>Feel free to reach out to me via the following:</p>
+            </div>
+            <div class="contact-icons">
+                <a href="mailto:garvitbudhiraja02@gmail.com" title="Email" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/garvit-exe" target="_blank" title="GitHub" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/garvit-budhiraja/" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://drive.google.com/file/d/17cnOoxZU6dBmO1sprw9L7fALOxWzmiMI/view?usp=share_link" target="_blank" title="Download Resume" aria-label="Download Resume">
+                    <i class="fas fa-file-download"></i>
+                </a>
+            </div>
+        </div>
     </section>
 
+    <script src="https://kit.fontawesome.com/5974177032.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
