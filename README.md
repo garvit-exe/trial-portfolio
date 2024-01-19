@@ -1,6 +1,7 @@
 # [Garvit's Portfolio](https://garvit-exe.github.io)
 
-Welcome to my personal portfolio! This repository hosts the code for my dynamic web-based resume.
+Welcome to my portfolio! This repository hosts the code for my dynamic web-based resume.<br>
+[My Portfolio](https://garvit-exe.github.io)
 
 ## Table of Contents
 - [About Me](#about-me)
@@ -28,16 +29,16 @@ Delhi Public School * Percentage - 88.8% * 2009 - 2020
 
 ## Projects
 ### ALICE - Artificial Linguistic Intelligent Computer Entity
-ALICE is a versatile AI voice assistant designed for various tasks, from everyday assistance to creative writing and code generation.
+ALICE is a versatile AI voice assistant designed for various tasks, from everyday assistance to creative writing and code generation.<br>
 [View Code](https://github.com/garvit-exe/AliceAI)
 
 ### Algorithm Visualiser
-This project helps visualize various sorting algorithms, currently supporting Bubble Sort.
-[View Project](https://garvit-exe.github.io/Algorithm-Visualiser)
+This project helps visualize various sorting algorithms, currently supporting Bubble Sort.<br>
+[View Project](https://garvit-exe.github.io/Algorithm-Visualiser)<br>
 [View Code](https://github.com/garvit-exe/Algorithm-Visualiser)
 
 ### Solar System Simulation
-A solar system simulation using Python and Pygame to visualize planetary orbits and gravitational forces with realistic initial velocities and considered gravitational forces between celestial bodies.
+A solar system simulation using Python and Pygame to visualize planetary orbits and gravitational forces with realistic initial velocities and considered gravitational forces between celestial bodies.<br>
 [View Code](https://github.com/garvit-exe/solar-system-simulation)
 
 Feel free to explore more projects on my [GitHub Profile](https://github.com/garvit-exe).
