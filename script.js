@@ -40,5 +40,12 @@ document.addEventListener('DOMContentLoaded', function () {
     createSkillsGrid(skillsList, "Soft Skills", softSkills);
     createSkillsGrid(skillsList, "Tools and Frameworks", tools);
 
+    skillsList.appendChild(programmingGrid.skillsSubheading);
+    skillsList.appendChild(programmingGrid.skillsGrid);
+    skillsList.appendChild(softSkillsGrid.skillsSubheading);
+    skillsList.appendChild(softSkillsGrid.skillsGrid);
+    skillsList.appendChild(toolsGrid.skillsSubheading);
+    skillsList.appendChild(toolsGrid.skillsGrid);
+
     addSmoothScrolling();
 });
