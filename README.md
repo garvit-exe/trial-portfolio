@@ -1,4 +1,4 @@
-# Garvit's Portfolio
+# [Garvit's Portfolio](https://garvit-exe.github.io)
 
 Welcome to my personal portfolio! This repository hosts the code for my dynamic web-based resume.
 
